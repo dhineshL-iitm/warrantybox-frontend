@@ -57,7 +57,7 @@ import { IoStatsChart } from "react-icons/io5";
 import { IoHome } from "react-icons/io5";
 
 const routes = [
-  {
+  /*{
     type: "collapse",
     name: "Dashboard",
     key: "dashboard",
@@ -65,17 +65,17 @@ const routes = [
     icon: <IoHome size="15px" color="inherit" />,
     component: Dashboard,
     noCollapse: true,
-  },
+  },*/
   {
     type: "collapse",
-    name: "Tables",
-    key: "tables",
-    route: "/tables",
+    name: "Dashboard",
+    key: "dashboard",
+    route: "/dashboard",
     icon: <IoStatsChart size="15px" color="inherit" />,
     component: Tables,
     noCollapse: true,
   },
-  {
+  /*{
     type: "collapse",
     name: "Billing",
     key: "billing",
@@ -120,7 +120,7 @@ const routes = [
     icon: <IoRocketSharp size="15px" color="inherit" />,
     component: SignUp,
     noCollapse: true,
-  },
+  },*/
 ];
 
 export default routes;
