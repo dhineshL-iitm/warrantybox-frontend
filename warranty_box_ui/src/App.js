@@ -1,6 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 
+// Create the function
+export function AddLibrary(urlOfTheLibrary) {
+  const script = document.createElement('script');
+  script.src = urlOfTheLibrary;
+  script.async = true;
+  document.body.appendChild(script);
+}
+
 function App() {
   return (
     <div className="App">
@@ -10,7 +18,7 @@ function App() {
             <a href="index.html" className="logo">
               <img src="images/logo.png" style={{width:'50%'}} alt=""/>
             </a>
-            <ul id="navigation" style={{float:'right'}}>
+            <ul id="navigation" style={{float:'right', marginRight:'-5%'}}>
               <li className="selected">
                 <a href="index.html">Home</a>
               </li>
@@ -46,8 +54,8 @@ function App() {
           <div className="header">
             <div>
               <img src="images/satellite.png" style={{display:'none'}} alt="" className="satellite"/>
-              <h1 style={{width:'95%', marginRight:'15%', marginLeft:'15%'}} >Warranty-Box</h1>
-              <h2 style={{width:'90%'}} >Customised user-friendly services</h2>
+              <h1 style={{width:'95%', marginRight:'15%', marginLeft:'15%', padding:'0'}} >Warranty-Box</h1>
+              <h2 style={{width:'90%', padding:'0', float:'left'}} >Customised user-friendly services</h2>
               <a href="blog.html" className="more">Read More</a>
               <h3>FEATURED PROJECTS</h3>
               <ul>
@@ -148,6 +156,7 @@ function App() {
             Learn React
           </a>
       </header>
+      {AddLibrary("js/mobile.js")}
     </div>
   );
 }
