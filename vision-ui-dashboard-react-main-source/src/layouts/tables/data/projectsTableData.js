@@ -61,9 +61,9 @@ const action = (
 export default {
   columns: [
     { name: "project", align: "left" },
-    { name: "budget", align: "left" },
-    { name: "status", align: "left" },
-    { name: "completion", align: "center" },
+    { name: "price", align: "left" },
+    { name: "warranty status", align: "left" },
+    { name: "warranty period left", align: "center" },
     { name: "action", align: "center" },
   ],
 
@@ -73,21 +73,21 @@ export default {
         <VuiBox display="flex" alignItems="center">
           <AdobeXD size="20px" />
           <VuiTypography pl="16px" color="white" variant="button" fontWeight="medium">
-            Chakra Vision UI Version
+            Product1 Chakra Vision
           </VuiTypography>
         </VuiBox>
       ),
-      budget: (
+      price: (
         <VuiTypography variant="button" color="white" fontWeight="medium">
           $14,000
         </VuiTypography>
       ),
-      status: (
+      "warranty status": (
         <VuiTypography variant="button" color="white" fontWeight="medium">
           Working
         </VuiTypography>
       ),
-      completion: <Completion value={60} color="info" />,
+      "warranty period left": <Completion value={60} color="info" />,
       action,
     },
     {
@@ -95,21 +95,21 @@ export default {
         <VuiBox display="flex" alignItems="center">
           <Atlassian size="20px" />
           <VuiTypography pl="16px" color="white" variant="button" fontWeight="medium">
-            Add Progress Track
+            Product2 Professional Tracksuit
           </VuiTypography>
         </VuiBox>
       ),
-      budget: (
+      price: (
         <VuiTypography variant="button" color="white" fontWeight="medium">
           $3,000
         </VuiTypography>
       ),
-      status: (
+      "warranty status": (
         <VuiTypography variant="button" color="white" fontWeight="medium">
           Done
         </VuiTypography>
       ),
-      completion: <Completion value={100} color="info" />,
+      "warranty period left": <Completion value={100} color="info" />,
       action,
     },
     {
@@ -117,21 +117,21 @@ export default {
         <VuiBox display="flex" alignItems="center">
           <Slack size="20px" />
           <VuiTypography pl="16px" color="white" variant="button" fontWeight="medium">
-            Fix Platform Errors
+            Product3 Goggles set
           </VuiTypography>
         </VuiBox>
       ),
-      budget: (
+      price: (
         <VuiTypography variant="button" color="white" fontWeight="medium">
           Not set
         </VuiTypography>
       ),
-      status: (
+      "warranty status": (
         <VuiTypography variant="button" color="white" fontWeight="medium">
           Canceled
         </VuiTypography>
       ),
-      completion: <Completion value={30} color="info" />,
+      "warranty period left": <Completion value={30} color="info" />,
       action,
     },
     {
@@ -139,21 +139,21 @@ export default {
         <VuiBox display="flex" alignItems="center">
           <Spotify size="20px" />
           <VuiTypography pl="16px" color="white" variant="button" fontWeight="medium">
-            Launch our Mobile App
+            Product4 Mobile Phone
           </VuiTypography>
         </VuiBox>
       ),
-      budget: (
+      price: (
         <VuiTypography variant="button" color="white" fontWeight="medium">
           $32,000
         </VuiTypography>
       ),
-      status: (
+      "warranty status": (
         <VuiTypography variant="button" color="white" fontWeight="medium">
           Canceled
         </VuiTypography>
       ),
-      completion: <Completion value={0} color="info" />,
+      "warranty period left": <Completion value={0} color="info" />,
       action,
     },
     {
@@ -161,21 +161,21 @@ export default {
         <VuiBox display="flex" alignItems="center">
           <Jira size="20px" />
           <VuiTypography pl="16px" color="white" variant="button" fontWeight="medium">
-            Add the New Pricing Page
+            Product5 Television set
           </VuiTypography>
         </VuiBox>
       ),
-      budget: (
+      price: (
         <VuiTypography variant="button" color="white" fontWeight="medium">
           $2,300
         </VuiTypography>
       ),
-      status: (
+      "warranty status": (
         <VuiTypography variant="button" color="white" fontWeight="medium">
           Done
         </VuiTypography>
       ),
-      completion: <Completion value={100} color="info" />,
+      "warranty period left": <Completion value={100} color="info" />,
       action,
     },
   ],

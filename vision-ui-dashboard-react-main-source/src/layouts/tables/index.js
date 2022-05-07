@@ -43,9 +43,9 @@ function Tables() {
       <VuiBox py={3}>
         <VuiBox mb={3}>
           <Card>
-            <VuiBox display="flex" justifyContent="space-between" alignItems="center" mb="22px">
+            <VuiBox display="flex" justifyContent="space-between" alignItems="center">
               <VuiTypography variant="lg" color="white">
-                Authors table
+                Products table
               </VuiTypography>
             </VuiBox>
             <VuiBox
@@ -62,14 +62,14 @@ function Tables() {
                 },
               }}
             >
-              <Table columns={columns} rows={rows} />
+              <Table columns={prCols} rows={prRows} />
             </VuiBox>
           </Card>
         </VuiBox>
         <Card>
-          <VuiBox display="flex" justifyContent="space-between" alignItems="center">
+          <VuiBox display="flex" justifyContent="space-between" alignItems="center" mb="22px">
             <VuiTypography variant="lg" color="white">
-              Projects table
+              Customers table
             </VuiTypography>
           </VuiBox>
           <VuiBox
@@ -86,7 +86,7 @@ function Tables() {
               },
             }}
           >
-            <Table columns={prCols} rows={prRows} />
+            <Table columns={columns} rows={rows} />
           </VuiBox>
         </Card>
       </VuiBox>

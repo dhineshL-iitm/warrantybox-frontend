@@ -236,7 +236,7 @@ function Sidenav({ color, brandName, routes, ...rest }) {
             color={color}
             fullWidth
           >
-            Upgrade to PRO
+            Warranty-Box
           </VuiButton>
         </VuiBox>
       </VuiBox>
