@@ -1,4 +1,7 @@
 import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './templatestyle.css';
+import './templatemobilestyle.css';
 import './App.css';
 
 // Create the function
