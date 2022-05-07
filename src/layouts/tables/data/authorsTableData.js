@@ -77,7 +77,7 @@ export default {
       function: <Function job="Manager" org="Organization" />,
       status: (
         <VuiBadge
-          variant="standard"
+          variant="gradient"
           badgeContent="Online"
           color="success"
           size="xs"
@@ -106,7 +106,7 @@ export default {
       function: <Function job="Programator" org="Developer" />,
       status: (
         <VuiBadge
-          variant="standard"
+          variant="gradient"
           badgeContent="Offline"
           size="xs"
           container
@@ -134,7 +134,7 @@ export default {
       function: <Function job="Executive" org="Projects" />,
       status: (
         <VuiBadge
-          variant="standard"
+          variant="gradient"
           badgeContent="Online"
           color="success"
           size="xs"
@@ -163,7 +163,7 @@ export default {
       function: <Function job="Programator" org="Developer" />,
       status: (
         <VuiBadge
-          variant="standard"
+          variant="gradient"
           badgeContent="Online"
           color="success"
           size="xs"
@@ -192,7 +192,7 @@ export default {
       function: <Function job="Manager" org="Executive" />,
       status: (
         <VuiBadge
-          variant="standard"
+          variant="gradient"
           badgeContent="Offline"
           size="xs"
           container
@@ -220,7 +220,7 @@ export default {
       function: <Function job="Programtor" org="Developer" />,
       status: (
         <VuiBadge
-          variant="standard"
+          variant="gradient"
           badgeContent="Offline"
           size="xs"
           container
