@@ -1,10 +1,8 @@
 // import ReactDOMMain from "react-dom";
 import { useState, useEffect, useMemo } from "react";
-// Vision UI Dashboard React Context Provider
-import { VisionUIControllerProvider } from "../context";
 
 // react-router components
-import { Route, Switch, Redirect, useLocation, BrowserRouter } from "react-router-dom";
+import { Route, Routes, Navigate, useLocation, BrowserRouter } from "react-router-dom";
 
 // @mui material components
 import { ThemeProvider } from "@mui/material/styles";
@@ -118,8 +116,6 @@ export default function DashBoard() {
   );
 
   return direction === "rtl" ? (
-    <BrowserRouter>
-      <VisionUIControllerProvider>
         <CacheProvider value={rtlCache}>
           <ThemeProvider theme={themeRTL}>
             <CssBaseline />
@@ -138,17 +134,13 @@ export default function DashBoard() {
               </>
             )}
             {layout === "vr" && <Configurator />}
-            <Switch>
+            <Routes>
               {getRoutes(routes)}
-              <Redirect from="*" to="/dashboard" />
-            </Switch>
+              <Route path="*" element={<Navigate to="/dashboard" />}/>
+            </Routes>
           </ThemeProvider>
         </CacheProvider>
-      </VisionUIControllerProvider>
-    </BrowserRouter>
   ) : (
-    <BrowserRouter>
-      <VisionUIControllerProvider>
         <ThemeProvider theme={theme}>
           <CssBaseline />
           {layout === "dashboard" && (
@@ -166,12 +158,10 @@ export default function DashBoard() {
             </>
           )}
           {layout === "vr" && <Configurator />}
-          <Switch>
+          <Routes>
             {getRoutes(routes)}
-            <Redirect from="*" to="/dashboard" />
-          </Switch>
+            <Route path="*" element={<Navigate to="/dashboard" />}/>
+          </Routes>
         </ThemeProvider>
-      </VisionUIControllerProvider>
-    </BrowserRouter>
   );
 }

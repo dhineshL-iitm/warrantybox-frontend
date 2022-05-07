@@ -1,16 +1,18 @@
 import './App.css';
 import Home from './Home/home';
+import { BrowserRouter } from 'react-router-dom';
+// Vision UI Dashboard React Context Provider
+import { VisionUIControllerProvider } from "./context";
 import {
   BrowserRouter as Router,
   Routes,
   Route
 } from "react-router-dom";
-import DashBoard from './Dashboard/DashBoard';
+import Dashboard from './Dashboard/DashBoard';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './NavBar/NavBar';
 import About from './about';
 import ContactUs from './ContactUs';
-import Dashboard from './Dashboard/DashBoard.js';
 function App() {
   return (
     <div>
@@ -20,7 +22,11 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />}/>
           <Route path="/contactus" element={<ContactUs />}/>
-          <Route path="/dashboard" element={<Dashboard />}/>
+          <Route path="/dashboard" element={
+              <VisionUIControllerProvider>
+                <Dashboard />
+              </VisionUIControllerProvider>
+          }/>
         </Routes>
       </Router>
     </div>
