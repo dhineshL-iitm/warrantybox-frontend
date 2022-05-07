@@ -60,7 +60,7 @@ const action = (
 
 export default {
   columns: [
-    { name: "project", align: "left" },
+    { name: "product", align: "left" },
     { name: "price", align: "left" },
     { name: "warranty status", align: "left" },
     { name: "warranty period left", align: "center" },
@@ -69,7 +69,7 @@ export default {
 
   rows: [
     {
-      project: (
+      product: (
         <VuiBox display="flex" alignItems="center">
           <AdobeXD size="20px" />
           <VuiTypography pl="16px" color="white" variant="button" fontWeight="medium">
@@ -91,7 +91,7 @@ export default {
       action,
     },
     {
-      project: (
+      product: (
         <VuiBox display="flex" alignItems="center">
           <Atlassian size="20px" />
           <VuiTypography pl="16px" color="white" variant="button" fontWeight="medium">
@@ -113,7 +113,7 @@ export default {
       action,
     },
     {
-      project: (
+      product: (
         <VuiBox display="flex" alignItems="center">
           <Slack size="20px" />
           <VuiTypography pl="16px" color="white" variant="button" fontWeight="medium">
@@ -135,7 +135,7 @@ export default {
       action,
     },
     {
-      project: (
+      product: (
         <VuiBox display="flex" alignItems="center">
           <Spotify size="20px" />
           <VuiTypography pl="16px" color="white" variant="button" fontWeight="medium">
@@ -157,7 +157,7 @@ export default {
       action,
     },
     {
-      project: (
+      product: (
         <VuiBox display="flex" alignItems="center">
           <Jira size="20px" />
           <VuiTypography pl="16px" color="white" variant="button" fontWeight="medium">

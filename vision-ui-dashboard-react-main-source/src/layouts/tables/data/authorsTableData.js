@@ -64,16 +64,16 @@ function Function({ job, org }) {
 
 export default {
   columns: [
-    { name: "author", align: "left" },
+    { name: "name", align: "left" },
     { name: "function", align: "left" },
     { name: "status", align: "center" },
-    { name: "employed", align: "center" },
+    { name: "registration date", align: "center" },
     { name: "action", align: "center" },
   ],
 
   rows: [
     {
-      author: <Author image={avatar4} name="Esthera Jackson" email="esthera@simmmple.com" />,
+      name: <Author image={avatar4} name="Esthera Jackson" email="esthera@simmmple.com" />,
       function: <Function job="Manager" org="Organization" />,
       status: (
         <VuiBadge
@@ -90,7 +90,7 @@ export default {
           })}
         />
       ),
-      employed: (
+      "registration date": (
         <VuiTypography variant="caption" color="white" fontWeight="medium">
           23/04/18
         </VuiTypography>
@@ -102,7 +102,7 @@ export default {
       ),
     },
     {
-      author: <Author image={avatar2} name="Alexa Liras" email="alexa@simmmple.com" />,
+      name: <Author image={avatar2} name="Alexa Liras" email="alexa@simmmple.com" />,
       function: <Function job="Programator" org="Developer" />,
       status: (
         <VuiBadge
@@ -118,7 +118,7 @@ export default {
           })}
         />
       ),
-      employed: (
+      "registration date": (
         <VuiTypography variant="caption" color="white" fontWeight="medium">
           11/01/19
         </VuiTypography>
@@ -130,7 +130,7 @@ export default {
       ),
     },
     {
-      author: <Author image={avatar3} name="Laurent Michael" email="laurent@simmmple.com" />,
+      name: <Author image={avatar3} name="Laurent Michael" email="laurent@simmmple.com" />,
       function: <Function job="Executive" org="Projects" />,
       status: (
         <VuiBadge
@@ -147,7 +147,7 @@ export default {
           })}
         />
       ),
-      employed: (
+      "registration date": (
         <VuiTypography variant="caption" color="white" fontWeight="medium">
           19/09/17
         </VuiTypography>
@@ -159,7 +159,7 @@ export default {
       ),
     },
     {
-      author: <Author image={avatar1} name="Freduardo Hill" email="freduardo@simmmple.com" />,
+      name: <Author image={avatar1} name="Freduardo Hill" email="freduardo@simmmple.com" />,
       function: <Function job="Programator" org="Developer" />,
       status: (
         <VuiBadge
@@ -176,7 +176,7 @@ export default {
           })}
         />
       ),
-      employed: (
+      "registration date": (
         <VuiTypography variant="caption" color="white" fontWeight="medium">
           24/12/08
         </VuiTypography>
@@ -188,7 +188,7 @@ export default {
       ),
     },
     {
-      author: <Author image={avatar5} name="Daniel Thomas" email="daniel@simmmple.com" />,
+      name: <Author image={avatar5} name="Daniel Thomas" email="daniel@simmmple.com" />,
       function: <Function job="Manager" org="Executive" />,
       status: (
         <VuiBadge
@@ -204,7 +204,7 @@ export default {
           })}
         />
       ),
-      employed: (
+      "registration date": (
         <VuiTypography variant="caption" color="white" fontWeight="medium">
           04/10/21
         </VuiTypography>
@@ -216,7 +216,7 @@ export default {
       ),
     },
     {
-      author: <Author image={avatar6} name="Mark Wilson" email="mark@simmmple.com" />,
+      name: <Author image={avatar6} name="Mark Wilson" email="mark@simmmple.com" />,
       function: <Function job="Programtor" org="Developer" />,
       status: (
         <VuiBadge
@@ -232,7 +232,7 @@ export default {
           })}
         />
       ),
-      employed: (
+      "registration date": (
         <VuiTypography variant="caption" color="white" fontWeight="medium">
           14/09/20
         </VuiTypography>
