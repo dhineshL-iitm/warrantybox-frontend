@@ -1,6 +1,5 @@
 import './App.css';
 import Home from './Home/home';
-import { BrowserRouter } from 'react-router-dom';
 // Vision UI Dashboard React Context Provider
 import { VisionUIControllerProvider } from "./context";
 import {

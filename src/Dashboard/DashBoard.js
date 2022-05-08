@@ -2,7 +2,7 @@
 import { useState, useEffect, useMemo } from "react";
 
 // react-router components
-import { Route, Routes, Navigate, useLocation, BrowserRouter } from "react-router-dom";
+import { Route, Routes, Navigate, useLocation } from "react-router-dom";
 
 // @mui material components
 import { ThemeProvider } from "@mui/material/styles";
@@ -136,7 +136,7 @@ export default function DashBoard() {
             {layout === "vr" && <Configurator />}
             <Routes>
               {getRoutes(routes)}
-              <Route path="*" element={<Navigate to="/dashboard" />}/>
+              <Route path="*" element={<Navigate to="/dashboard"/>}/>
             </Routes>
           </ThemeProvider>
         </CacheProvider>
@@ -160,7 +160,7 @@ export default function DashBoard() {
           {layout === "vr" && <Configurator />}
           <Routes>
             {getRoutes(routes)}
-            <Route path="*" element={<Navigate to="/dashboard" />}/>
+            <Route path="*" element={<Navigate to="/dashboard"/>}/>
           </Routes>
         </ThemeProvider>
   );
